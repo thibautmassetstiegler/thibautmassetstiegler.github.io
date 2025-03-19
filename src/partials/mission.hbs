@@ -1,0 +1,33 @@
+<section class="mission" data-skills="{{mission.skillsDataset}}">
+    <header>
+        <h3>
+            <span class="mission__title">{{mission.title}}</span>
+            {{#if mission.link}}
+                <a class="mission__link" target="_blank" href="{{mission.link}}">({{mission.link}})</a>
+            {{/if}}
+            <span class="mission__date">({{mission.formattedStartAt}} - {{mission.formattedEndAt}})</span>
+        </h3>
+    </header>
+
+    <main>
+        <ul>
+            {{#each mission.tasks}}
+                <li>{{{this}}}</li>
+            {{/each}}
+        </ul>
+    </main>
+
+    <footer>
+        <ul class="mission__stack">
+            {{#each mission.skills}}
+                <li class="mission__stack__item" data-skill="{{this.id}}">{{this.name}}</li>
+            {{/each}}
+            {{#if mission.moreSkills}}
+                <button class="mission__stack__show-more">(Voir plus)</button>
+            {{/if}}
+            {{#each mission.moreSkills}}
+                <li class="mission__stack__item mission__stack__item--more" data-skill="{{this.id}}">{{this.name}}</li>
+            {{/each}}
+        </ul>
+    </footer>
+</section>

@@ -1,0 +1,48 @@
+@use '../abstracts/colors';
+
+.open-sidebar {
+    background-color: colors.$text;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    height: 4rem;
+    padding: 1rem;
+    position: fixed;
+    outline: none;
+    right: 2rem;
+    top: 2rem;
+    width: 4rem;
+
+    &:focus {
+        background-color: colors.$hover;
+    }
+
+    &::after {
+        background-color: colors.$background;
+        content: '';
+        display: block;
+        height: 2rem;
+        mask-image: url(/src/assets/img/icon-filter.svg);
+        mask-repeat: no-repeat;
+        width: 2rem;
+    }
+
+    .selected-filter-count {
+        color: #fff;
+        border-radius: 100%;
+        background-color: #f66;
+        position: absolute;
+        top: -.5rem;
+        right: -.5rem;
+        padding: 0 .5rem;
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        z-index: 1;
+
+        &:empty {
+            display: none;
+        }
+    }
+}

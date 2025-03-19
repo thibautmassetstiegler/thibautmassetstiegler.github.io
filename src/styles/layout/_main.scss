@@ -1,0 +1,59 @@
+@use '../abstracts/mixins';
+
+.cv {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "aside" "footer";
+    padding: 1rem;
+
+    &__main {
+        grid-area: main;
+
+        #missions {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    &__header {
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__sidebar {
+        background-color: #fff;
+        border-left: 1px solid #000;
+        grid-area: aside;
+        top: 0;
+        bottom: 0;
+        left: 100vw;
+        position: fixed;
+        width: 100vw;
+        transition: left .10s ease-out;
+        visibility: hidden;
+        z-index: 1;
+
+        &.show {
+            left: 0;
+            visibility: visible;
+
+            @include mixins.respond-to("lg") {
+                left: 60vw;
+                width: 40vw;
+            }
+
+            @include mixins.respond-to("xxl") {
+                left: 75vw;
+                width: 25vw;
+            }
+        }
+    }
+}
+
+.cv__main {
+    grid: main;
+}

@@ -1,0 +1,41 @@
+@use '../abstracts/colors';
+
+.skill-group {
+    margin-bottom: 1.5rem;
+
+    &__title {
+        margin: {
+            top: 0;
+            bottom: .5rem;
+        };
+    }
+
+    &__list {
+        cursor: pointer;
+        list-style: none;
+        padding: 0 1rem 0 .25rem;
+
+        &__item {
+            margin-bottom: .25rem;
+
+            &.hide {
+                display: none;
+            }
+
+            &.active,
+            &:hover {
+                .skill__name {
+                    color: colors.$hover;
+                }
+
+                .skill__level::after {
+                    background-color: colors.$hover;
+                }
+            }
+        }
+    }
+
+    &:not(:has([data-skill]:not(.hide))) {
+        display: none;
+    }
+}

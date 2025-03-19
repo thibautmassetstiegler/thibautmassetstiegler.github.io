@@ -1,0 +1,36 @@
+<aside id="sidebar" class="cv__sidebar sidebar" role="complementary">
+    <header class="sidebar__header">
+        <h2>Compétences <span class="selected-filter-count"></span></h2>
+
+        <button role="button" aria-label="Fermer la barre latérale" aria-labelledby="sidebar" class="sidebar__close close-sidebar"></button>
+    </header>
+
+    <footer class="sidebar__footer">
+        <span class="clear-selected-skills">Supprimer les filtres</span>
+
+        <div class="form-filter">
+            Filtrer : <input id="filter-skills" name="skill" type="search" />
+            <span class="search"></span>
+        </div>
+
+    </footer>
+
+    <main class="sidebar__main">
+        {{#each skillGroups}}
+            <div class="skill-group">
+                <h3 class="skill-group__title">{{this.title}}</h3>
+                <ul class="skill-group__list">
+                    {{#each this.skills}}
+                        <li class="skill-group__list__item" data-skill="{{this.id}}" data-level="{{this.level}}">
+                            <label class="skill">
+                                <input type="checkbox" name="skills" value="{{this.id}}" />
+                                <span class="skill__name">{{this.name}}</span>
+                                <span data-level="{{this.level}}" class="skill__level">{{this.level}} / 5</span>
+                            </label>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        {{/each}}
+    </main>
+</aside>

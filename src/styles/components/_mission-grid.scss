@@ -1,0 +1,17 @@
+@use '../abstracts/mixins';
+
+.mission-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+
+    @include mixins.respond-to("xxl") {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+        &--full {
+            grid-column: span 2;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+@use '../abstracts/colors';
+
+.sidebar {
+    background-color: colors.$background;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-items: start;
+    padding: 0 2rem 1rem;
+    z-index: 1;
+
+    &__header {
+        background-color: colors.$background;
+        grid-area: header;
+        position: sticky;
+        top: 0;
+
+        .selected-filter-count {
+            &:not(:empty)::before {
+                content: '(';
+            }
+
+            &:not(:empty)::after {
+                content: ')';
+            }
+        }
+
+        > * {
+            margin-bottom: 0;
+        }
+    }
+
+    &__main {
+        grid-area: main;
+        overflow-y: scroll;
+    }
+
+    &__close {
+        aspect-ratio: 1;
+        border-radius: 100%;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 1rem;
+        width: 2.5rem;
+        z-index: 1;
+        text-align: center;
+        transition: transform .25s;
+
+        &::after {
+            aspect-ratio: 1;
+            background-color: colors.$text;
+            content: '';
+            display: block;
+            mask-image: url(/src/assets/img/icon-x.svg);
+            mask-repeat: no-repeat;
+            mask-size: 1.5rem;
+            mask-position: center;
+        }
+
+        &:hover,
+        &:focus {
+            transform: rotate(-180deg);
+        }
+
+        &:focus {
+            outline-color: colors.$hover;
+
+            &::after {
+                background-color: colors.$hover;
+            }
+        }
+    }
+
+    &__footer {
+        grid-area: footer;
+    }
+
+    .clear-selected-skills {
+        cursor: pointer;
+    }
+}

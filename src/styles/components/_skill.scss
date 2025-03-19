@@ -1,0 +1,64 @@
+@use '../abstracts/colors';
+
+.skill {
+    align-items: center;
+    cursor: pointer;
+    color: colors.$text;
+    display: inline-flex;
+    padding: 0 .25rem;
+    position: relative;
+    width: 100%;
+
+    &:focus-within {
+        outline: 2px dotted colors.$hover;
+    }
+
+    input {
+        position: absolute;
+        left: -9999px;
+    }
+
+    &__name {
+        flex-basis: 50%;
+    }
+
+    &__level {
+        color: colors.$background;
+        flex-basis: 50%;
+        font-size: .75rem;
+        line-height: 1rem;
+        height: 1rem;
+        padding-left: .45rem;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            left: 0;
+            content: '';
+            background-color: colors.$text;
+            height: 1rem;
+            z-index: -1;
+        }
+
+
+        &[data-level="5"]::after {
+            width: 100%;
+        }
+
+        &[data-level="4"]::after {
+            width: 80%;
+        }
+
+        &[data-level="3"]::after {
+            width: 60%;
+        }
+
+        &[data-level="2"]::after {
+            width: 40%;
+        }
+
+        &[data-level="1"]::after {
+            width: 20%;
+        }
+    }
+}

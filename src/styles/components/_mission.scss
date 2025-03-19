@@ -1,0 +1,85 @@
+@use '../abstracts/colors';
+
+.mission {
+    padding: 0;
+
+    &.hidden {
+        display: none;
+    }
+
+    &__title {
+        margin: 0 0 1rem;
+    }
+
+    &__date {
+        font-size: 1rem;
+    }
+
+    &__link {
+        font-size: 1rem;
+    }
+
+    &__stack {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: .25rem;
+        list-style: none;
+        margin: 1rem 0 0;
+        padding: 0;
+
+        &::before {
+            content: 'Stack :';
+        }
+
+        > *::after {
+            color: colors.$text;
+            content: ', ';
+        }
+
+        > *:last-child::after {
+            content: '';
+        }
+
+        &__item {
+            &--more {
+                display: none;
+            }
+
+            &.active {
+                color: colors.$accent;
+            }
+        }
+
+        &__show-more {
+            border: none;
+            background: none;
+            color: colors.$text;
+            cursor: pointer;
+
+            &:hover,
+            &:focus {
+                color: colors.$hover;
+                outline-color: colors.$hover;
+            }
+
+            &::after {
+                content: '';
+            }
+        }
+
+        &--show-more {
+            .mission__stack__item--more {
+                display: block;
+            }
+
+            .mission__stack__show-more {
+                display: none;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+}
