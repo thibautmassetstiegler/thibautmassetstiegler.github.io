@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vieWordPressort" content="width=device-width, initial-scale=1.0">
+    <title>CV - Thibaut Masset Stiegler</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script type="module" crossorigin src="/assets/index-CXSKHaoQ.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-b9MEpU9T.css">
+</head>
+<body>
+    <button class="open-sidebar" aria-label="Ouvrir la barre latérale" aria-labelledby="sidebar" role="button">
+        <div class="selected-filter-count"></div>
+    </button>
+
+    <div class="cv">
+        <header class="cv__header">
+            <h1>Thibaut Masset Stiegler</h1>
+        
+            <p><strong>Développeur fullstack senior avec plus de 15 ans d’expérience</strong>, j’accompagne les entreprises dans la création et l’optimisation de leurs plateformes web et SaaS. Spécialisé en <strong>PHP (Laravel, Symfony, …)</strong>, <strong>(Vue.js, React, …)</strong> et en <strong>optimisation de performances</strong>, j’interviens sur des projets nécessitant une architecture robuste et évolutive. Habitué au travail en équipe et en télétravail, je suis également à l’aise dans des rôles de <strong>lead tech</strong> et <strong>mentoring</strong>. </p>
+        </header>
+
+        <aside id="sidebar" class="cv__sidebar sidebar" role="complementary">
+            <header class="sidebar__header">
+                <h2>Compétences <span class="selected-filter-count"></span></h2>
+        
+                <button role="button" aria-label="Fermer la barre latérale" aria-labelledby="sidebar" class="sidebar__close close-sidebar"></button>
+            </header>
+        
+            <footer class="sidebar__footer">
+                <span class="clear-selected-skills">Supprimer les filtres</span>
+        
+                <div class="form-filter">
+                    Filtrer : <input id="filter-skills" name="skill" type="search" />
+                    <span class="search"></span>
+                </div>
+        
+            </footer>
+        
+            <main class="sidebar__main">
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Langages</h3>
+                        <ul class="skill-group__list">
+                                <li class="skill-group__list__item" data-skill="css" data-level="5">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="css" />
+                                        <span class="skill__name">CSS</span>
+                                        <span data-level="5" class="skill__level">5 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="html" data-level="5">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="html" />
+                                        <span class="skill__name">HTML</span>
+                                        <span data-level="5" class="skill__level">5 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="js" data-level="5">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="js" />
+                                        <span class="skill__name">JavaScript</span>
+                                        <span data-level="5" class="skill__level">5 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="php" data-level="5">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="php" />
+                                        <span class="skill__name">PHP</span>
+                                        <span data-level="5" class="skill__level">5 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="ts" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="ts" />
+                                        <span class="skill__name">TypeScript</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="sh" data-level="3">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="sh" />
+                                        <span class="skill__name">Bash</span>
+                                        <span data-level="3" class="skill__level">3 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="rb" data-level="3">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="rb" />
+                                        <span class="skill__name">Ruby</span>
+                                        <span data-level="3" class="skill__level">3 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="py" data-level="2">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="py" />
+                                        <span class="skill__name">Python</span>
+                                        <span data-level="2" class="skill__level">2 / 5</span>
+                                    </label>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Frameworks / CMS</h3>
+                        <ul class="skill-group__list">
+                                <li class="skill-group__list__item" data-skill="laravel" data-level="5">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="laravel" />
+                                        <span class="skill__name">Laravel</span>
+                                        <span data-level="5" class="skill__level">5 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="wp" data-level="5">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="wp" />
+                                        <span class="skill__name">WordPress</span>
+                                        <span data-level="5" class="skill__level">5 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="react" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="react" />
+                                        <span class="skill__name">React</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="sf" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="sf" />
+                                        <span class="skill__name">Symfony</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="vue" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="vue" />
+                                        <span class="skill__name">Vue.js</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="nest" data-level="3">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="nest" />
+                                        <span class="skill__name">NestJS</span>
+                                        <span data-level="3" class="skill__level">3 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="reactnative" data-level="3">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="reactnative" />
+                                        <span class="skill__name">React Native</span>
+                                        <span data-level="3" class="skill__level">3 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="joomla" data-level="2">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="joomla" />
+                                        <span class="skill__name">Joomla!</span>
+                                        <span data-level="2" class="skill__level">2 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="ror" data-level="2">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="ror" />
+                                        <span class="skill__name">Ruby on Rails</span>
+                                        <span data-level="2" class="skill__level">2 / 5</span>
+                                    </label>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Data store</h3>
+                        <ul class="skill-group__list">
+                                <li class="skill-group__list__item" data-skill="mariadb" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="mariadb" />
+                                        <span class="skill__name">MariaDB</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="mysql" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="mysql" />
+                                        <span class="skill__name">MySQL</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="pgsql" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="pgsql" />
+                                        <span class="skill__name">PostgreSQL</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="sqlite" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="sqlite" />
+                                        <span class="skill__name">SQLite</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="tsql" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="tsql" />
+                                        <span class="skill__name">Transact-SQL</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="elasticsearch" data-level="3">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="elasticsearch" />
+                                        <span class="skill__name">Elasticsearch</span>
+                                        <span data-level="3" class="skill__level">3 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="mongodb" data-level="3">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="mongodb" />
+                                        <span class="skill__name">MongoDB</span>
+                                        <span data-level="3" class="skill__level">3 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="redis" data-level="3">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="redis" />
+                                        <span class="skill__name">Redis</span>
+                                        <span data-level="3" class="skill__level">3 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="solr" data-level="3">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="solr" />
+                                        <span class="skill__name">Solr</span>
+                                        <span data-level="3" class="skill__level">3 / 5</span>
+                                    </label>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">DevOps</h3>
+                        <ul class="skill-group__list">
+                                <li class="skill-group__list__item" data-skill="cloudways" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="cloudways" />
+                                        <span class="skill__name">Cloudways</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="github" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="github" />
+                                        <span class="skill__name">GitHub</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="heroku" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="heroku" />
+                                        <span class="skill__name">Heroku</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="ovh" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="ovh" />
+                                        <span class="skill__name">OVH Cloud</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="aws" data-level="3">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="aws" />
+                                        <span class="skill__name">AWS</span>
+                                        <span data-level="3" class="skill__level">3 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="gitlab" data-level="2">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="gitlab" />
+                                        <span class="skill__name">GitLab</span>
+                                        <span data-level="2" class="skill__level">2 / 5</span>
+                                    </label>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">WordPress</h3>
+                        <ul class="skill-group__list">
+                                <li class="skill-group__list__item" data-skill="wpacf" data-level="5">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="wpacf" />
+                                        <span class="skill__name">ACF</span>
+                                        <span data-level="5" class="skill__level">5 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="wptimber" data-level="5">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="wptimber" />
+                                        <span class="skill__name">Timber</span>
+                                        <span data-level="5" class="skill__level">5 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="wpum" data-level="5">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="wpum" />
+                                        <span class="skill__name">Ultimate Member</span>
+                                        <span data-level="5" class="skill__level">5 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="wpcli" data-level="5">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="wpcli" />
+                                        <span class="skill__name">WPCLI</span>
+                                        <span data-level="5" class="skill__level">5 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="wpadvads" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="wpadvads" />
+                                        <span class="skill__name">Advanced Ads</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="wpyoast" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="wpyoast" />
+                                        <span class="skill__name">Yoast SEO</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Builders</h3>
+                        <ul class="skill-group__list">
+                                <li class="skill-group__list__item" data-skill="gulp" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="gulp" />
+                                        <span class="skill__name">Gulp</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="parcel" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="parcel" />
+                                        <span class="skill__name">Parcel</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="webpack" data-level="4">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="webpack" />
+                                        <span class="skill__name">Webpack</span>
+                                        <span data-level="4" class="skill__level">4 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="grunt" data-level="3">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="grunt" />
+                                        <span class="skill__name">Grunt</span>
+                                        <span data-level="3" class="skill__level">3 / 5</span>
+                                    </label>
+                                </li>
+                                <li class="skill-group__list__item" data-skill="vite" data-level="3">
+                                    <label class="skill">
+                                        <input type="checkbox" name="skills" value="vite" />
+                                        <span class="skill__name">Vite</span>
+                                        <span data-level="3" class="skill__level">3 / 5</span>
+                                    </label>
+                                </li>
+                        </ul>
+                    </div>
+            </main>
+        </aside>
+
+        <main class="cv__main">
+            <header>
+                <h2>Expériences professionnelles</h2>
+            </header>
+
+            <main id="missions">
+                    <section class="mission" data-skills="[&quot;php&quot;,&quot;laravel&quot;,&quot;js&quot;,&quot;vue&quot;,&quot;gitlab&quot;,&quot;aws&quot;]">
+                        <header>
+                            <h3>
+                                <span class="mission__title">Développeur Fullstack Sénior</span>
+                                    <a class="mission__link" target="_blank" href="https://www.heyteam.com/">(https://www.heyteam.com/)</a>
+                                <span class="mission__date">(mai 2025 - mai 2025)</span>
+                            </h3>
+                        </header>
+                    
+                        <main>
+                            <ul>
+                                    <li>Ajout de nouvelles fonctionnalités et corrections de bugs</li>
+                                    <li>Amélioration de la qualité du code (tests, structure, modélisation)</li>
+                            </ul>
+                        </main>
+                    
+                        <footer>
+                            <ul class="mission__stack">
+                                    <li class="mission__stack__item" data-skill="php">PHP</li>
+                                    <li class="mission__stack__item" data-skill="laravel">Laravel</li>
+                                    <li class="mission__stack__item" data-skill="js">JavaScript</li>
+                                    <li class="mission__stack__item" data-skill="vue">Vue.js</li>
+                                    <button class="mission__stack__show-more">(Voir plus)</button>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="gitlab">GitLab</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="aws">AWS</li>
+                            </ul>
+                        </footer>
+                    </section>
+                    <section class="mission" data-skills="[&quot;php&quot;,&quot;js&quot;,&quot;html&quot;,&quot;css&quot;,&quot;wp&quot;,&quot;elasticsearch&quot;,&quot;redis&quot;,&quot;github&quot;,&quot;cloudways&quot;,&quot;wpadvads&quot;,&quot;wpacf&quot;,&quot;wpfacet&quot;,&quot;wptimber&quot;,&quot;wpcli&quot;]">
+                        <header>
+                            <h3>
+                                <span class="mission__title">Le Site de la Sneaker</span>
+                                    <a class="mission__link" target="_blank" href="https://lesitedelasneaker.com">(https://lesitedelasneaker.com)</a>
+                                <span class="mission__date">(juillet 2024 - avril 2025)</span>
+                            </h3>
+                        </header>
+                    
+                        <main>
+                            <ul>
+                                    <li>Amélioration du temps de chargement des pages du site en optimisant les appels à la base de données et en mettant en place du cache.</li>
+                                    <li>Ajout de la sélection de taille sur les paires.</li>
+                                    <li>Ajout de filtres dans la liste des paires.</li>
+                                    <li>Ajout d’emplacement de publicités dynamiques.</li>
+                                    <li>Ajout d’un système de codes promotion.</li>
+                                    <li>Amélioration diverses d’UX et de SEO.</li>
+                                    <li>Maintenance et suivi des mises à jour.</li>
+                            </ul>
+                        </main>
+                    
+                        <footer>
+                            <ul class="mission__stack">
+                                    <li class="mission__stack__item" data-skill="php">PHP</li>
+                                    <li class="mission__stack__item" data-skill="js">JavaScript</li>
+                                    <li class="mission__stack__item" data-skill="html">HTML</li>
+                                    <li class="mission__stack__item" data-skill="css">CSS</li>
+                                    <li class="mission__stack__item" data-skill="wp">WordPress</li>
+                                    <li class="mission__stack__item" data-skill="elasticsearch">Elasticsearch</li>
+                                    <li class="mission__stack__item" data-skill="redis">Redis</li>
+                                    <button class="mission__stack__show-more">(Voir plus)</button>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="github">GitHub</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="cloudways">Cloudways</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="wpadvads">Advanced Ads</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="wpacf">ACF</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="wpfacet">FacetWP</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="wptimber">Timber</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="wpcli">WPCLI</li>
+                            </ul>
+                        </footer>
+                    </section>
+                    <section class="mission" data-skills="[&quot;php&quot;,&quot;js&quot;,&quot;ts&quot;,&quot;react&quot;,&quot;reactnative&quot;,&quot;wp&quot;,&quot;elasticsearch&quot;,&quot;github&quot;,&quot;cloudways&quot;,&quot;wpacf&quot;]">
+                        <header>
+                            <h3>
+                                <span class="mission__title">Sneakers Alert</span>
+                                    <a class="mission__link" target="_blank" href="https://sneakersalert.com">(https://sneakersalert.com)</a>
+                                <span class="mission__date">(novembre 2024 - avril 2025)</span>
+                            </h3>
+                        </header>
+                    
+                        <main>
+                            <ul>
+                                    <li>Ajout d’un système de concours.</li>
+                                    <li>Optimisation de l’affichage des listes de contenus.</li>
+                                    <li>Maintenance de l’application et mises à jour.</li>
+                            </ul>
+                        </main>
+                    
+                        <footer>
+                            <ul class="mission__stack">
+                                    <li class="mission__stack__item" data-skill="php">PHP</li>
+                                    <li class="mission__stack__item" data-skill="js">JavaScript</li>
+                                    <li class="mission__stack__item" data-skill="ts">TypeScript</li>
+                                    <li class="mission__stack__item" data-skill="react">React</li>
+                                    <li class="mission__stack__item" data-skill="reactnative">React Native</li>
+                                    <li class="mission__stack__item" data-skill="wp">WordPress</li>
+                                    <li class="mission__stack__item" data-skill="elasticsearch">Elasticsearch</li>
+                                    <button class="mission__stack__show-more">(Voir plus)</button>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="github">GitHub</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="cloudways">Cloudways</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="wpacf">ACF</li>
+                            </ul>
+                        </footer>
+                    </section>
+                    <section class="mission" data-skills="[&quot;php&quot;,&quot;js&quot;,&quot;css&quot;,&quot;html&quot;,&quot;react&quot;,&quot;wp&quot;,&quot;github&quot;,&quot;wpacf&quot;,&quot;wpum&quot;]">
+                        <header>
+                            <h3>
+                                <span class="mission__title">Prysmian Club</span>
+                                    <a class="mission__link" target="_blank" href="https://prysmianclub.fr">(https://prysmianclub.fr)</a>
+                                <span class="mission__date">(novembre 2023 - avril 2025)</span>
+                            </h3>
+                        </header>
+                    
+                        <main>
+                            <ul>
+                                    <li>Création d’un thème sur mesure.</li>
+                                    <li>Création d’un plugin d’inscription des utilisateurs.</li>
+                                    <li>Création de blocs Gutenberg sur mesure.</li>
+                                    <li>Modifications et sécurisation de la REST API.</li>
+                            </ul>
+                        </main>
+                    
+                        <footer>
+                            <ul class="mission__stack">
+                                    <li class="mission__stack__item" data-skill="php">PHP</li>
+                                    <li class="mission__stack__item" data-skill="js">JavaScript</li>
+                                    <li class="mission__stack__item" data-skill="css">CSS</li>
+                                    <li class="mission__stack__item" data-skill="html">HTML</li>
+                                    <li class="mission__stack__item" data-skill="react">React</li>
+                                    <li class="mission__stack__item" data-skill="wp">WordPress</li>
+                                    <button class="mission__stack__show-more">(Voir plus)</button>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="github">GitHub</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="wpacf">ACF</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="wpum">Ultimate Member</li>
+                            </ul>
+                        </footer>
+                    </section>
+                    <section class="mission" data-skills="[&quot;php&quot;,&quot;js&quot;,&quot;css&quot;,&quot;html&quot;,&quot;laravel&quot;,&quot;filament&quot;,&quot;livewire&quot;,&quot;wp&quot;,&quot;github&quot;,&quot;filament&quot;,&quot;livewire&quot;]">
+                        <header>
+                            <h3>
+                                <span class="mission__title">Bold Creative House</span>
+                                    <a class="mission__link" target="_blank" href="https://bold.paris">(https://bold.paris)</a>
+                                <span class="mission__date">(novembre 2023 - avril 2025)</span>
+                            </h3>
+                        </header>
+                    
+                        <main>
+                            <ul>
+                                    <li>Maintenance et modification diverses sur le site.</li>
+                                    <li>Création des différentes pages du site.</li>
+                                    <li>Création d’une application de suivi de prospection.</li>
+                            </ul>
+                        </main>
+                    
+                        <footer>
+                            <ul class="mission__stack">
+                                    <li class="mission__stack__item" data-skill="php">PHP</li>
+                                    <li class="mission__stack__item" data-skill="js">JavaScript</li>
+                                    <li class="mission__stack__item" data-skill="css">CSS</li>
+                                    <li class="mission__stack__item" data-skill="html">HTML</li>
+                                    <li class="mission__stack__item" data-skill="laravel">Laravel</li>
+                                    <li class="mission__stack__item" data-skill="filament">Laravel Filament</li>
+                                    <li class="mission__stack__item" data-skill="livewire">Laravel Livewire</li>
+                                    <li class="mission__stack__item" data-skill="wp">WordPress</li>
+                                    <button class="mission__stack__show-more">(Voir plus)</button>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="github">GitHub</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="filament">Laravel Filament</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="livewire">Laravel Livewire</li>
+                            </ul>
+                        </footer>
+                    </section>
+                    <section class="mission" data-skills="[&quot;php&quot;,&quot;js&quot;,&quot;ts&quot;,&quot;css&quot;,&quot;html&quot;,&quot;laravel&quot;,&quot;vue&quot;,&quot;github&quot;,&quot;heroku&quot;]">
+                        <header>
+                            <h3>
+                                <span class="mission__title">Komeet (ex Vendredi)</span>
+                                    <a class="mission__link" target="_blank" href="https://vendredi.cc">(https://vendredi.cc)</a>
+                                <span class="mission__date">(juillet 2022 - août 2023)</span>
+                            </h3>
+                        </header>
+                    
+                        <main>
+                            <ul>
+                                    <li>Développement et optimisation d’un <strong>SaaS</strong></li>
+                                    <li>Lead tech : mentoring des développeurs juniors, revue de code, refonte de l’architecture.</li>
+                                    <li>Participation aux recrutements (➜ tests techniques, entretiens).</li>
+                            </ul>
+                        </main>
+                    
+                        <footer>
+                            <ul class="mission__stack">
+                                    <li class="mission__stack__item" data-skill="php">PHP</li>
+                                    <li class="mission__stack__item" data-skill="js">JavaScript</li>
+                                    <li class="mission__stack__item" data-skill="ts">TypeScript</li>
+                                    <li class="mission__stack__item" data-skill="css">CSS</li>
+                                    <li class="mission__stack__item" data-skill="html">HTML</li>
+                                    <li class="mission__stack__item" data-skill="laravel">Laravel</li>
+                                    <li class="mission__stack__item" data-skill="vue">Vue.js</li>
+                                    <button class="mission__stack__show-more">(Voir plus)</button>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="github">GitHub</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="heroku">Heroku</li>
+                            </ul>
+                        </footer>
+                    </section>
+                    <section class="mission" data-skills="[&quot;php&quot;,&quot;laravel&quot;,&quot;vue&quot;,&quot;wp&quot;,&quot;webpack&quot;,&quot;sass&quot;,&quot;github&quot;]">
+                        <header>
+                            <h3>
+                                <span class="mission__title">École O’clock</span>
+                                    <a class="mission__link" target="_blank" href="https://oclock.io">(https://oclock.io)</a>
+                                <span class="mission__date">(mars 2018 - avril 2022)</span>
+                            </h3>
+                        </header>
+                    
+                        <main>
+                            <ul>
+                                    <li>Animation de formations en Laravel, Vue.js et WordPress</li>
+                                    <li>Conception et développement de projets pédagogiques</li>
+                                    <li>Mise en place de bonnes pratiques de développement : tests, performance, architecture</li>
+                            </ul>
+                        </main>
+                    
+                        <footer>
+                            <ul class="mission__stack">
+                                    <li class="mission__stack__item" data-skill="php">PHP</li>
+                                    <li class="mission__stack__item" data-skill="laravel">Laravel</li>
+                                    <li class="mission__stack__item" data-skill="vue">Vue.js</li>
+                                    <li class="mission__stack__item" data-skill="wp">WordPress</li>
+                                    <li class="mission__stack__item" data-skill="webpack">Webpack</li>
+                                    <li class="mission__stack__item" data-skill="sass">Sass</li>
+                                    <button class="mission__stack__show-more">(Voir plus)</button>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="github">GitHub</li>
+                            </ul>
+                        </footer>
+                    </section>
+                    <section class="mission" data-skills="[&quot;php&quot;,&quot;mysql&quot;,&quot;tsql&quot;,&quot;solr&quot;,&quot;apache&quot;,&quot;nginx&quot;,&quot;sh&quot;,&quot;rb&quot;,&quot;py&quot;,&quot;mongodb&quot;]">
+                        <header>
+                            <h3>
+                                <span class="mission__title">MC2M (Groupe Marie Claire)</span>
+                                <span class="mission__date">(mai 2010 - mai 2017)</span>
+                            </h3>
+                        </header>
+                    
+                        <main>
+                            <ul>
+                                    <li>Développement et optimisation d’APIs REST et SOAP</li>
+                                    <li>Conception d’applications web et mobiles à fort trafic</li>
+                                    <li>Dénormalisation de bases de données pour améliorer la performance</li>
+                            </ul>
+                        </main>
+                    
+                        <footer>
+                            <ul class="mission__stack">
+                                    <li class="mission__stack__item" data-skill="php">PHP</li>
+                                    <li class="mission__stack__item" data-skill="mysql">MySQL</li>
+                                    <li class="mission__stack__item" data-skill="tsql">Transact-SQL</li>
+                                    <li class="mission__stack__item" data-skill="solr">Solr</li>
+                                    <button class="mission__stack__show-more">(Voir plus)</button>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="apache">Apache</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="nginx">Nginx</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="sh">Bash</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="rb">Ruby</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="py">Python</li>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="mongodb">MongoDB</li>
+                            </ul>
+                        </footer>
+                    </section>
+                    <section class="mission" data-skills="[&quot;php&quot;,&quot;js&quot;,&quot;html&quot;,&quot;css&quot;,&quot;mysql&quot;,&quot;solr&quot;,&quot;wp&quot;,&quot;joomla&quot;,&quot;apache&quot;]">
+                        <header>
+                            <h3>
+                                <span class="mission__title">Shokola</span>
+                                <span class="mission__date">(septembre 2008 - avril 2010)</span>
+                            </h3>
+                        </header>
+                    
+                        <main>
+                            <ul>
+                                    <li>Créations de site</li>
+                                    <li>Formations de client</li>
+                            </ul>
+                        </main>
+                    
+                        <footer>
+                            <ul class="mission__stack">
+                                    <li class="mission__stack__item" data-skill="php">PHP</li>
+                                    <li class="mission__stack__item" data-skill="js">JavaScript</li>
+                                    <li class="mission__stack__item" data-skill="html">HTML</li>
+                                    <li class="mission__stack__item" data-skill="css">CSS</li>
+                                    <li class="mission__stack__item" data-skill="mysql">MySQL</li>
+                                    <li class="mission__stack__item" data-skill="solr">Solr</li>
+                                    <li class="mission__stack__item" data-skill="wp">WordPress</li>
+                                    <li class="mission__stack__item" data-skill="joomla">Joomla!</li>
+                                    <button class="mission__stack__show-more">(Voir plus)</button>
+                                    <li class="mission__stack__item mission__stack__item--more" data-skill="apache">Apache</li>
+                            </ul>
+                        </footer>
+                    </section>
+        </main>
+    </div>
+</body>
+</html>
