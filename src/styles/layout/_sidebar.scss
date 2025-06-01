@@ -74,10 +74,14 @@
     }
 
     &__footer {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
         grid-area: footer;
-    }
 
-    .clear-selected-skills {
-        cursor: pointer;
+        .clear-selected-skills {
+            color: colors.$text;
+            cursor: pointer;
+        }
     }
 }
