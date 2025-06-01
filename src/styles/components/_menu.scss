@@ -1,0 +1,16 @@
+@use '../abstracts/colors';
+@use '../abstracts/mixins';
+
+.menu {
+    &::before {
+        content: 'Tri : ';
+    }
+
+    &__item {
+        color: colors.$text;
+
+        &.active {
+            color: colors.$accent;
+        }
+    }
+}

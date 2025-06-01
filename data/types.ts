@@ -76,4 +76,27 @@ export type Mission = {
     tasks: string[];
     skillIds: SkillId[];
     moreSkillIds?: SkillId[];
+    context?: MissionContext;
+    theme?: MissionTheme;
 };
+
+export type MissionSortFunction = (missionA: Mission, missionB: Mission) => number;
+
+export type MissionSort = {
+    label: string;
+    sort: MissionSortFunction;
+}
+
+export enum MissionContext {
+    Agency = 'missionContext.agency',
+    Media = 'missionContext.media',
+    SaaS = 'missionContext.saas',
+    School = 'missionContext.school',
+};
+
+export enum MissionTheme {
+    Collaboration = 'missionTheme.collaboration',
+    Mentoring = 'missionTheme.mentoring',
+    Performance = 'missionTheme.performance',
+    SEO = 'missionTheme.seo',
+}
