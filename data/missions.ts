@@ -2,8 +2,7 @@ import { Mission, SkillId } from './types';
 
 const missions: Mission[] = [
     {
-        title: 'Développeur Fullstack Sénior',
-        company: 'Heyteam',
+        title: 'Heyteam',
         link: 'https://www.heyteam.com/',
         startAt: new Date('2025-05'),
         endAt: new Date(),
